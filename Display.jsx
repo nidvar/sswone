@@ -2,22 +2,52 @@ class Display extends React.Component{
     constructor(props){
         super(props)
         this.state={
-            page:'home'
+            page:'home',
         }
     }
     home=()=>{this.setState({page:'home'})}
-    page1=()=>{this.setState({page:1})}
-    page2=()=>{this.setState({page:2})}
+    page1=()=>{this.setState({page:'one'})}
+    page2=()=>{this.setState({page:'two'})}
     contact=()=>{this.setState({page:'contact'})}
 
     display_body=()=>{
         if(this.state.page ==='home'){
-            return <Bodyhome />
+            return (
+                <div>
+                    <div className={this.state.page}>
+                            <Statement 
+                                heading={'IDENTITY'} 
+                                content={'A responsive business oriented template with a video background designed by TEMPLATED and released under the Creative Commons License.'}
+                            />
+                    </div>
+                    <div className='main'>
+                            <Statement 
+                                heading={'SEM TURPIS AMET SEMPER'} 
+                                content={'In arcu accumsan arcu adipiscing accumsan orci ac. Felis id enim aliquet. Accumsan ac integer lobortis commodo ornare aliquet accumsan erat tempus amet porttitor.'}
+                            />
+                            <div className='box-container'>
+                                <Box title='REACT' paragraph={'In arcu accumsan arcu adipiscing accumsan orci ac. Felis id enim aliquet. Accumsan ac integer lobortis commodo ornare aliquet accumsan erat tempus amet porttitor.'} />
+                                <Box title='REACT' paragraph={'In arcu accumsan arcu adipiscing accumsan orci ac. Felis id enim aliquet. Accumsan ac integer lobortis commodo ornare aliquet accumsan erat tempus amet porttitor.'} />
+                                <Box title='REACT' paragraph={'In arcu accumsan arcu adipiscing accumsan orci ac. Felis id enim aliquet. Accumsan ac integer lobortis commodo ornare aliquet accumsan erat tempus amet porttitor.'} />
+                            </div>
+                            <div className='box-container'>
+                                <Box title='REACT' paragraph={'In arcu accumsan arcu adipiscing accumsan orci ac. Felis id enim aliquet. Accumsan ac integer lobortis commodo ornare aliquet accumsan erat tempus amet porttitor.'} />
+                                <Box title='REACT' paragraph={'In arcu accumsan arcu adipiscing accumsan orci ac. Felis id enim aliquet. Accumsan ac integer lobortis commodo ornare aliquet accumsan erat tempus amet porttitor.'} />
+                                <Box title='REACT' paragraph={'In arcu accumsan arcu adipiscing accumsan orci ac. Felis id enim aliquet. Accumsan ac integer lobortis commodo ornare aliquet accumsan erat tempus amet porttitor.'} />
+                            </div>
+                            
+                            <Parallax />
+                            <Statement 
+                                heading={'FAUCIBUS CONSEQUAT LOREM'} 
+                                content={'In arcu accumsan arcu adipiscing accumsan orci ac. Felis id enim aliquet. Accumsan ac integer lobortis commodo ornare aliquet accumsan erat tempus amet porttitor.'}
+                            />
+                    </div>
+                </div>   
+            )
         }else if(this.state.page === 1){
             return <Bodypage1 />
         }
     }
-
     render(){
         return(
             <div>
@@ -31,14 +61,7 @@ class Display extends React.Component{
                         <li onClick={this.contact}>CONTACT</li>
                     </ul>
                 </div>
-
-                <div className='main'>
-
-                </div>
-                    
-
-
-
+                {this.display_body()}
                 <div className='footer'>
 
 
