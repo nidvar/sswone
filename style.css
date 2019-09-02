@@ -71,7 +71,6 @@ h1, p, h3{
 
 .main{
     min-height:800px;
-    background-color:skyblue;
 }
 .parallax{
     min-height:250px;
@@ -80,7 +79,6 @@ h1, p, h3{
 .statement{
     max-width:1000px;
     margin:auto;
-    border:1px solid black;
     padding:40px;
 }
 .home{
@@ -91,7 +89,7 @@ h1, p, h3{
 .box{
     height:400px;
     width:400px;
-    background-color:lightcoral;
+    border:1px solid black;
     margin:30px;
 }
 .box h3{
@@ -108,7 +106,6 @@ h1, p, h3{
 @media only screen and (max-width: 600px) {
     .navbar{
         padding: 15px 0 0 20px;
-        background-color:wheat;
     }
     .navbar ul{
         margin:0;
@@ -161,7 +158,6 @@ h1, p, h3{
     .statement{
         max-width:1000px;
         margin:auto;
-        border:1px solid black;
         padding:40px;
     }
 }
