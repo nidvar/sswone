@@ -1,13 +1,70 @@
-body{
+html body{
     margin:0;
-    padding:0;
+    text-align:center;
 }
-.nav{
-    height:50px;
+h1, p, h3{
+    margin:0;
+}
+.navbar{
     background-color:black;
+    min-height:35px;
+    padding: 15px 0 0 20px
 }
-.nav p{
-    margin:0;
+.navbar p{
     color:white;
-    padding: 15px 0 0 15px;
+    float:left;
+}
+.navbar ul{
+    float:right;
+    margin:0 60px 0 0;
+}
+.navbar li{
+    color:white;
+    float:left;
+    display:block;
+    margin:0 20px 0 0;
+}
+.footer-top{
+    display:flex;
+    width:75%;
+    margin:auto;
+    text-align:left;
+}
+.footer-bottom{
+    border-top:1px solid grey;
+    width:75%;
+    justify-content: center;
+    margin:20px auto 0 auto;
+    padding:40px 0 0 0;
+}
+.footer{
+    background-color: black;
+    min-height:400px;
+    padding: 100px;
+}
+.footer, h3, p{
+    color:white;
+}
+#footer-box-one{
+    max-width:600px;
+}
+.line{
+    border-bottom:1px solid grey;
+    padding:10px;
+}
+#last{
+    padding:10px;
+}
+#footer-box-three p{
+    padding:10px;
+}
+.footerbox{
+    margin-right:20px;
+    padding:20px 40px 0 0;
+}
+.footerbox p{
+    font-size:20px;
+}
+.main{
+    min-height:800px;
 }
