@@ -40,15 +40,15 @@ class Display extends React.Component{
                             <br />
                             <p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing. Lorem ipsum dolor vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing sed feugiat eu faucibus. Integer ac sed amet praesent. Nunc lacinia ante nunc ac gravida.</p>
                         </div>
-                        <div class='footerbox' id='footer-box-two'>
+                        <div className='footerbox' id='footer-box-two'>
                             <h3>ACCUMSAN MONTES VIVERRA</h3>
                             <br />
-                            <p class='line'>Dolor pulvinar sed etiam.</p>
-                            <p class='line'>Etiam vel lorem sed amet.</p>
-                            <p class='line'>Felis enim feugiat viverra.</p>
+                            <p className='line'>Dolor pulvinar sed etiam.</p>
+                            <p className='line'>Etiam vel lorem sed amet.</p>
+                            <p className='line'>Felis enim feugiat viverra.</p>
                             <p id='last'>Dolor pulvinar magna etiam.</p>
                         </div>
-                        <div class='footerbox' id='footer-box-three'>
+                        <div className='footerbox' id='footer-box-three'>
                             <h3>MAGNA SED IPSUM</h3>
                             <br />
                             <p>Twitter</p>
