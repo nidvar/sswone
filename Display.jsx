@@ -13,7 +13,7 @@ class Display extends React.Component{
     display_body=()=>{
         if(this.state.page ==='home'){
             return <Home />
-        }else if(this.state.page === 1){
+        }else if(this.state.page === 'one'){
             return <h1>Not home</h1>
         }
     }
@@ -58,7 +58,7 @@ class Display extends React.Component{
                         </div>
                     </div>
                     <div className='footer-bottom'>
-                        <p>© Untitled. Photos Unsplash, Video Coverr.</p>
+                        <p>© Nidvar. Just another Simple Website.</p>
                     </div>
 
 

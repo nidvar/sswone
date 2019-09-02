@@ -29,6 +29,11 @@ class Home extends React.Component{
                             heading={'FAUCIBUS CONSEQUAT LOREM'} 
                             content={'In arcu accumsan arcu adipiscing accumsan orci ac. Felis id enim aliquet. Accumsan ac integer lobortis commodo ornare aliquet accumsan erat tempus amet porttitor.'}
                         />
+                        <div className='box-container'>
+                            <Box paragraph={'In arcu accumsan arcu adipiscing accumsan orci ac. Felis id enim aliquet. Accumsan ac integer lobortis commodo ornare aliquet accumsan erat tempus amet porttitor.'} />
+                            <Box paragraph={'In arcu accumsan arcu adipiscing accumsan orci ac. Felis id enim aliquet. Accumsan ac integer lobortis commodo ornare aliquet accumsan erat tempus amet porttitor.'} />
+                            <Box paragraph={'In arcu accumsan arcu adipiscing accumsan orci ac. Felis id enim aliquet. Accumsan ac integer lobortis commodo ornare aliquet accumsan erat tempus amet porttitor.'} />
+                        </div>
                 </div>
             </div>   
         )
