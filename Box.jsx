@@ -5,10 +5,8 @@ class Box extends React.Component{
     render(){
         return(
             <div className='box'>
-                <div className='box2'>
-                    <h3>{this.props.title}</h3>
-                    <p>{this.props.paragraph}</p>
-                </div>
+                <h3>{this.props.title}</h3>
+                <p>{this.props.paragraph}</p>
             </div>
         )
     }

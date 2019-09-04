@@ -31,16 +31,20 @@ class Display extends React.Component{
                     </ul>
                 </div>
                 {this.display_body()}
+                        <br />
+                        <br />
+                        <br />
+                        <br />
                 <div className='footer'>
 
 
                     <div className='footer-top'>
-                        <div className='footerbox' id='footer-box-one'>
+                        <div className='footerbox boxone'>
                             <h3>ACCUMSAN MONTES VIVERRA</h3>
                             <br />
                             <p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing. Lorem ipsum dolor vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing sed feugiat eu faucibus. Integer ac sed amet praesent. Nunc lacinia ante nunc ac gravida.</p>
                         </div>
-                        <div className='footerbox' id='footer-box-two'>
+                        <div className='footerbox'>
                             <h3>ACCUMSAN MONTES VIVERRA</h3>
                             <br />
                             <p className='line'>Dolor pulvinar sed etiam.</p>
@@ -48,7 +52,7 @@ class Display extends React.Component{
                             <p className='line'>Felis enim feugiat viverra.</p>
                             <p id='last'>Dolor pulvinar magna etiam.</p>
                         </div>
-                        <div className='footerbox' id='footer-box-three'>
+                        <div className='footerbox'>
                             <h3>MAGNA SED IPSUM</h3>
                             <br />
                             <p>Twitter</p>

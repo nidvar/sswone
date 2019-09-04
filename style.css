@@ -1,163 +1,109 @@
-html body{
+body{
     margin:0;
-    text-align:center;
 }
-h1, p, h3{
+h1{
     margin:0;
+    font-weight:lighter;
+}
+.bigheading{
+    font-size:80px;
 }
 .navbar{
-    background-color:black;
-    min-height:35px;
-    padding: 15px 0 0 20px
-}
-.navbar p{
     color:white;
-    float:left;
+    background-color:black;
+    display:flex;
+    justify-content: space-between;
+    padding: 12px 40px 0 20px;
+    height:50px;
 }
 .navbar ul{
-    float:right;
-    margin:0 60px 0 0;
+    display:flex;
 }
-.navbar li{
-    color:white;
-    float:left;
+.navbar ul li{
     display:block;
-    margin:0 20px 0 0;
+    margin:0 15px 0 15px;
+    justify-content:space-around;
+}
+.footer{
+    padding:50px;
+    color:white;
+    background-color: black;
+}
+.footerbox{
+    margin:10px;
+    padding:10px;
 }
 .footer-top{
     display:flex;
-    width:75%;
-    margin:auto;
-    text-align:left;
+    justify-content: center;
+    flex-wrap:wrap;
 }
 .footer-bottom{
-    border-top:1px solid grey;
-    width:75%;
-    justify-content: center;
-    margin:20px auto 0 auto;
-    padding:40px 0 0 0;
+    text-align:center;
+    margin:20px 0 0 0;
+    padding:20px 0 0 0;
+    border-top:1px solid white;
+    max-width:55%;
+    margin:auto;
 }
-.footer{
-    background-color: black;
-    min-height:400px;
-    padding: 100px;
-}
-.footer h3{
-    color:white;
-}
-.footer p{
-    color:white;
-}
-#footer-box-one{
-    max-width:600px;
-}
-#footer-box-three p{
-    padding:10px;
-}
-.footerbox{
-    margin-right:20px;
-    padding:20px 40px 0 0;
-}
-.footerbox p{
-    font-size:20px;
-}
-.line{
-    border-bottom:1px solid grey;
-    padding:10px;
-}
-#last{
-    padding:10px;
-}
-
-.main{
-    min-height:800px;
+.boxone{
+    flex-basis:600px;
 }
 .parallax{
-    min-height:250px;
-    background-color:wheat;
-}
-.statement{
-    max-width:1000px;
-    margin:auto;
-    padding:40px;
-}
-.home{
-    height:300px;
-    background-color:lightgreen;
-    padding: 140px 0 0 0
-}
-.box{
+    background-color:skyblue;
     height:400px;
-    width:400px;
-    border:1px solid black;
-    margin:30px;
-}
-.box h3{
-    margin-top:170px;
-}
-.box-container{
     display:flex;
+    flex-direction: column;
     justify-content: center;
 }
-.box2{
-    width:250px;
+.main{
+    text-align:center;
+}
+.statement{
+    padding:20px;
+    max-width:1000px;
     margin:auto;
 }
-@media only screen and (max-width: 600px) {
-    .navbar{
-        padding: 15px 0 0 20px;
-    }
-    .navbar ul{
-        margin:0;
-    }
-    .navbar li{
-        margin:0;
+.box-container{
+    max-width:1500px;
+    margin:auto;
+    padding:20px;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: center;
+}
+.box{
+    margin:40px;
+    max-width:400px;
+    height:400px;
+    padding:40px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 3px 3px 3px 1px grey;
+}
+.home{
+    background-image: url("cover.jpg");
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+    text-align:center;
+    height: 550px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    color:white;
+}
+@media only screen and (max-width: 850px) {
+    .box-container{
+        flex-direction:column;
+        justify-content: center;
+        align-items: center;
     }
     .footer-top{
-        width:100%;
-        margin:auto;
-        text-align:left;
-        display:block;
+        flex-direction: column;
     }
-    .footer-bottom{
-        border-top:1px solid grey;
-        width:100%;
-        justify-content: center;
+    .boxone{
+        flex-basis:300px;
     }
-    .footer{
-        background-color: black;
-        min-height:400px;
-        padding: 0;
-        display:block;
-    }
-    #footer-box-one{
-        max-width:600px;
-    }
-    #footer-box-three p{
-        padding:10px;
-    }
-    .footerbox{
-        margin-right:0;
-        padding:0;
-    }
-    .footerbox p{
-        font-size:20px;
-    }
-    .box{
-        height:400px;
-        width:300px;
-        margin:0 auto 0 auto;
-    }
-    .box h3{
-        margin-top:20px;
-    }
-    .box-container{
-        display:block;
-        justify-content: center;
-    }
-    .statement{
-        max-width:1000px;
-        margin:auto;
-        padding:40px;
-    }
-}
+  }
